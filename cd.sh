@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
 pwd
-ls -la
+
+[ -f Vagrantfile ] || {
+  cd /vagrant
+  ls -la 
+}
